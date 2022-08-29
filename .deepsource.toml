@@ -1,13 +1,8 @@
 version = 1
 
-test_patterns = ["tests/**"]
-
-exclude_patterns = [
-    "tests/**",
-    "docs/**",
-    "setup.py",
-    "setup-raw.py"
-]
+[[analyzers]]
+name = "shell"
+enabled = true
 
 [[analyzers]]
 name = "python"
@@ -15,5 +10,3 @@ enabled = true
 
   [analyzers.meta]
   runtime_version = "3.x.x"
-  max_line_length = 99
-  skip_doc_coverage = ["module", "magic", "init", "nonpublic"]
